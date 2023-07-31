@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+aside {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  text-align: left;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 200px;
+  background-color: hsl(0, 0%, 100%)
+  z-index: 1400 !important;
+}
+
+aside:hover {
+  opacity: 1;
+  left: 0px;
+}
+
+.bg {
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 65px;
+  width: 180px;
+}
+
+/* .h-text {
+  padding-top: 40px;
+  margin-left: 10px;
+  animation: typing 3s steps(10) infinite;
+}
+
+.h-animate .text {
+  position: relative;
+  color: #00c9F3;
+  font-size: 25px;
+  font-weight: 600;
+  animation: typing 3s steps(10) infinite;
+}
+
+
+.h-animate .text.first-text{
+  color: #000000;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
+} */
+
+/* * {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --hue: 223;
+  --bg:
+  hsl(var(--hue),10%,90%);
+  --fg:
+  hsl(var(--hue),10%,10%);
+  --light-sh:
+  hsla(var(--hue),10%,95%,0.5);
+  --dark-sh:
+  hsla(var(--hue),10%,15%,0.4);
+} */
+
+header {
+  background: none;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: gray;
+}
+
+main {
+  padding: 5px;
+}
+
+header,
+.main-head,
+.social-links,
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.side-menu a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: hsl(17, 100%, 63%);
+  color: #ffffff;
+  text-align: left;
+  text-decoration: none;
+  border: rgb(0, 60, 255);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.side-menu a:hover {
+  background-color: #4762fc;
+}
+
+.side-menu a:active {
+  background-color: #dd53ff;
+
+}
+
+.main-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 200px;
+}
+
+/* ############# */
+
+.main-head img {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+}
+
+.social-links a {
+}
+
+.social-links {
+  margin-right: 30px;
+}
+
+.main-body-wrapper main {
+  overflow: auto;
+}
+
+.search {
+  position: relative;
+  margin: 0px 25px;
+}
+.search input {
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.search #i-search {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.navlogin {
+  background-color: hsl(0, 0%, 99%);
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 5px;
+  float: right;
+  margin-left: 300px;
+}
+
+.navlogin a {
+  float: right;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+  height: 40px;
+  
+}
+
+.navlogin a:hover {
+  background-color: #61b3ff;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  float: right;
+  font-size: 18px;
+  transform: translate(255px,255px,255px);
+}
+
+.page-top-button {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.page-top-button:hover {
+  background-color: #0056b3;
+}
+
+.forsupport {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.forsupport h1 {
+  color: #0066cc;
+}
+
+.forsupport p {
+  color: #444;
+}
+.forsupport ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.highlight {
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+}
+.contact-links {
+  margin-top: 20px;
+}
+.contact-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.head {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.head h1 {
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+h3 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
