@@ -1,0 +1,299 @@
+<<<<<<< Updated upstream
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 180px;
+  background-color: #45a8eb;
+  z-index: 1200 !important;
+}
+
+header {
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: gray;
+}
+
+main {
+  padding: 5px;
+}
+
+header,
+.main-head,
+.social-links,
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.side-menu a {
+  text-decoration: none;
+  padding: 5px 0px;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+}
+
+.main-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 180px;
+}
+
+/* ############# */
+
+.main-head img {
+  width: 70px;
+  height: 70px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+}
+
+.social-links {
+  margin-right: 30px;
+}
+
+.main-body-wrapper main {
+  overflow: auto;
+}
+
+.search {
+  position: relative;
+  margin: 0px 10px;
+}
+.search input {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+.search #i-search {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+=======
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.icon ul a {
+  /* vertical-align: middle; */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon img {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+
+/* Apply some basic styles to the navigation bar */
+nav {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  font-style: Arial;
+  border-bottom: 2px solid #797977;
+  transition: top 0.3s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.logo img {
+  vertical-align: middle;
+  height: 60px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.heading {
+  flex-grow: 1px;
+  font-size: 25px;
+}
+
+.search-bar {
+  color: #000000;
+  margin-left: 400px;
+  border-radius: 30px;
+}
+
+.search-bar input {
+  background-color: #ffffff;
+  width: 250px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #ffffff55;
+  color: #000000;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+}
+
+h2 {
+  color: #666;
+  font-size: 24px;
+}
+
+header,
+footer,
+section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+footer ul {
+  columns: 2;
+}
+
+footer li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  footer ul {
+    columns: 1;
+  }
+}
+
+#go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 100px;
+  height: 40px;
+  background: #2e99fc;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#go-to-top:hover {
+  background: #03e734;
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+}
+
+/* Dark Mode Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: #222;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+>>>>>>> Stashed changes
