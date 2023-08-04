@@ -5,9 +5,9 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   font-family: Arial, sans-serif;
-  position: relative;
+  /* position: relative; */
 }
 
 aside {
@@ -83,12 +83,30 @@ aside:hover {
   hsla(var(--hue),10%,15%,0.4);
 } */
 
-header {
+/* header,
+.toolbar,
+.main-head,
+h1  {
+  font-size: 31px;
+  color: #202022;
+  font-family: montserrat, sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: -264px;
+  margin-top: -20px;
+  pointer-events: none;
+
+} */
+
+/* header {
   background: none;
   justify-content: space-between;
-  background-color: white;
-  border-bottom: 1px solid lightgray;
-}
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+} */
 
 footer {
   text-align: center;
@@ -98,9 +116,9 @@ footer p {
   color: gray;
 }
 
-main {
+/* main {
   padding: 5px;
-}
+} */
 
 header,
 .main-head,
@@ -115,6 +133,7 @@ header,
   display: flex;
   flex-direction: column;
   padding: 5px;
+  
 }
 
 .side-menu a {
@@ -140,6 +159,17 @@ header,
 
 }
 
+/* .sparkle path {
+  color: hsl(0 0%calcc((var(--active, 0)* 70%)+ var(--base)));
+  transform-box: fill-box;
+  transform-origin: center;
+  fill: currentColor;
+  stroke: currentColor;
+  animation-delay: calc((var(--transition) * 1.5) + (var(--delay) * 1s));
+  animation-duration: 0.6s;
+  transition: color var(--transition);
+} */
+
 .main-body-wrapper {
   display: flex;
   flex-direction: column;
@@ -148,7 +178,17 @@ header,
   bottom: 0;
   right: 0;
   left: 200px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+
 }
+
+.main-body-wrapper main {
+  overflow: auto;
+
+}
+
+
 
 /* ############# */
 
@@ -170,10 +210,6 @@ header,
 
 .social-links {
   margin-right: 30px;
-}
-
-.main-body-wrapper main {
-  overflow: auto;
 }
 
 .search {
@@ -240,7 +276,7 @@ header,
   background-color: #0056b3;
 }
 
-.forsupport {
+/* .forsupport {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 20px;
@@ -256,7 +292,7 @@ header,
 .forsupport ul {
   list-style: disc;
   margin-left: 20px;
-}
+} */
 
 .highlight {
   background-color: #f2f2f2;
