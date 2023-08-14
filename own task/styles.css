@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: inline-flex;
+}
+
+#logo {
+    margin-left: 140px;
+    height: 50px;
+    width: 50px;
+}
+
+#tname {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+#loginbtn {
+    float: right;
+    margin-right: 60px;
+    font-size: 17px;
+    margin-top: 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #58a3ef;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#loginbtn:hover {
+    background-color: orange;
+    color: #000000;
+}
+
+/* --------------------Dark mode Toggle------------------------  */
+
+.darkmode {
+    /* align-items: center; */
+    float: right;
+    margin-right: 30px;
+    margin-top: 8px;
+    /* padding: 5px 5px; */
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #ffffff;
+}
+
+#modeimg {
+    float: right;
+    margin-right: 10px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.darkmode .toggle-container {
+    margin-top: 5px;
+    margin-right: 8px;
+    float: right;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #656464;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.dark-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* -------------------Dark mode Toggle---------------------------  */
+
+
+/* ---------------Search engine ----------------------- */
+
+.search-container {
+
+    margin-right: 40px;
+    margin-top: 5px;
+    float: right;
+    /* align-items: center; */
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+}
+
+.search-box.active input {
+    width: 300px;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    transform: rotate(360deg);
+}
+
+.search-icon {
+    /* font-size: 25px; */
+    color: white;
+    display: inline-block;
+
+
+}
+
+.search-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* ---------------Search engine ----------------------- */
+/* .content {
+    margin-left: 10%;
+    padding-left: 10px;
+    margin-top: 10%;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: none;
+    padding-top: -80px;
+}
+
+.content h3 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 20px;
+    width: 50%;
+    padding-bottom: 90px;
+    font-style: italic;
+}
+
+.icons a img {
+    display: block;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    /* border: 5px solid black; */
+    border-radius: 60%;
+}
+
+.btn3 {
+    margin-left: 200px;
+    font-size: 50px;
+    padding-top: -200px;
+}
+
+.img {
+    display: flex;
+    position: relative;
+    float: right;
+    align-items: center;
+    margin-left: 100px;
+} */
